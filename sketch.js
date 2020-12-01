@@ -1,6 +1,6 @@
 let slider;
 function setup() {
-  createCanvas(400,400);
+  createCanvas(1080,720);
   slider = createSlider(0, 30, 100);
   slider.position(10, 10);
   slider.style('width', '150px');
