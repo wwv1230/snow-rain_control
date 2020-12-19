@@ -11,7 +11,7 @@ function setup() {
 function draw() {
 
   force = force + 2 ;
-  background(200);
+  background(140,190,255);
   let val = slider.value();
   stroke(0,0,255);
   ellipse(width/2, force, val, 30);
