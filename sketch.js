@@ -1,4 +1,6 @@
 let slider;
+let force = 0;
+
 function setup() {
   createCanvas(1080,720);
   slider = createSlider(0, 30, 100);
@@ -7,9 +9,11 @@ function setup() {
 }
 
 function draw() {
+
+  force = force + 2 ;
   background(200);
   let val = slider.value();
   stroke(0,0,255);
-  ellipse(width/2, height/2, val, 30);
+  ellipse(width/2, force, val, 30);
 
 }
